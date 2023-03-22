@@ -23,11 +23,11 @@ response.then((v) => {
     <img src="https://source.unsplash.com/random/500x400/?coding,hacking,computer&${i}" class="card-img-top" alt="Coding Event">
     <div class="card-body">
     <h5 class="card-title">${contests[item].name}</h5>
-    <p class="card-text">Status: ${contests[item].status === 'CODING' ? '<b>ONGOING</b>' : '<b>STARTING SOON</b>'}</p>
-    <p class="card-text">Starts in 24 Hours? ${contests[item].in_24_hours}</p>
-    <p class="card-text">Site: ${contests[item].site}</p>
-    <p class="card-text">Starts: ${start_time}</p>
-    <p class="card-text">Ends: ${end_time}</p>
+    <p class="card-text"><b>Status:</b> ${contests[item].status === 'CODING' ? '<b id="green">ONGOING</b>' : '<b id="blue">STARTING SOON</b>'}</p>
+    <p class="card-text"><b>Starts in 24 Hours?</b> ${contests[item].in_24_hours}</p>
+    <p class="card-text"><b>Site:</b> ${contests[item].site}</p>
+    <p class="card-text"><b>Starts:</b> ${start_time}</p>
+    <p class="card-text"><b>Ends:</b> ${end_time}</p>
     <a href="${contests[item].url}" class="btn btn-primary">Visit Contest</a>
     </div>
   </div>`
