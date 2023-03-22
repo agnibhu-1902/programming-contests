@@ -27,7 +27,7 @@ response.then((v) => {
     <div class="card-body">
     <h5 class="card-title">${contests[item].name}</h5>
     <p class="card-text"><b>Status:</b> ${flag ? '<b id="green">ONGOING</b>' : '<b id="blue">STARTING SOON</b>'}</p>
-    <p class="card-text"><b>Starts in 24 Hours?</b> ${contests[item].in_24_hours}</p>
+    ${!flag ? '<p class="card-text"><b>Starts in 24 Hours?</b> '+`${contests[item].in_24_hours}`+'</p>' : ''}
     <p class="card-text"><b>Site:</b> ${contests[item].site}</p>
     <p class="card-text"><b>Starts:</b> ${start_time}</p>
     <p class="card-text"><b>Ends:</b> ${end_time}</p>
